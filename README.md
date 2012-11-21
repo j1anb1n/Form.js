@@ -4,7 +4,7 @@ JavaScript form validation framework inspired by Django.form
 
 ## define a form
 
-```
+```javascript
 var SignUpForm = Form({
     username: StringField({ required: true, maxLength: 20, minLength: 6 }),
     password: PasswordField({ required: true, maxLength: 30, minLength: 6 }),
@@ -20,7 +20,7 @@ var SignUpForm = Form({
 
 ## bind to DOM
 
-```
+```javascript
 var form = SignUpForm({
 	$el: $('form')
 })
